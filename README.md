@@ -556,7 +556,7 @@ sudo systemctl start nginx
 sudo systemctl status nginx.service
 
 # check logs for nginx
-sudo journalctl -xe
+sudo journalctl -xe | grep nginx
 
 # check for journalctl unit (daemon)
 sudo systemctl list-units | grep journal
